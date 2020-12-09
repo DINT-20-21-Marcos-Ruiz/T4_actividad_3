@@ -40,7 +40,7 @@
                 <EventTrigger RoutedEvent="MouseEnter">
                     <BeginStoryboard>
                         <Storyboard>
-                            <DoubleAnimation Storyboard.TargetProperty="FontSize" To="60" Duration="0:0:3"></DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize" To="60" Duration="0:0:03"></DoubleAnimation>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
@@ -89,7 +89,7 @@
                 <DataTrigger Binding="{Binding Path=Heroe}" Value="True">
                     <Setter Property="Background" Value="PaleGreen"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding Path=Heroe}" Value="False">
+                <DataTrigger Binding="{Binding Path=Villano}" Value="True">
                     <Setter Property="Background" Value="IndianRed"/>
                 </DataTrigger>
             </Style.Triggers>

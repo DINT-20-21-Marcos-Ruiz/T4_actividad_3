@@ -55,9 +55,10 @@ namespace T4_actividad_3
             contador = Convert.ToInt32(totalPag_TextBlock.Text) + 1;
             totalPag_TextBlock.Text = Convert.ToString(contador);
             superheroe = new Superheroe();
-            superheroe.Heroe = true;
             newHeroe_Grid.DataContext = superheroe;
+            superheroe.Heroe = true;
             MessageBox.Show("Superhéroe insertado con exito", "Superhéroes", MessageBoxButton.OK, MessageBoxImage.Information);
+
         }
         public void Avanzar_MouseUp(object sender, MouseEventArgs e)
         {
